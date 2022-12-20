@@ -1,0 +1,66 @@
+/* Mobile First */
+
+.header{
+    margin-bottom: 30px;
+}
+
+.header__logo{
+    border-radius: 50%;
+    border: 1px solid var(--colorGris);
+    width: 180px;
+    margin: 15px auto 30px;
+    display: block;
+}
+
+.header__burger{
+    border: none;
+    background-color: var(--colorGris);
+    margin: 0 auto 30px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    color: white;
+}
+
+.header__nav--menu li{
+    width: 100%;
+    background-color: var(--colorGris);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Tablet (768px) */
+
+@media (min-width: 426px) {
+    .header__burger{
+        display: none;
+    }
+    .header__nav--menu li{
+        width: 15%;
+        margin-bottom: 0px;
+        padding: 10px 0;
+        display: inline-block;
+        margin-right: 1.2%;
+    }
+    .header__nav--menu li:last-child{
+        width: 15%;
+        margin-bottom: 0px;
+        padding: 10px 0;
+        display: inline-block;
+        margin-right: 0;
+    }
+}
+
+/* Desktop */
+
+@media (min-width:1180px) {
+    .header__nav--menu li{
+        width: 180px;
+        margin-bottom: 2px;
+        padding: 10px 0;
+        margin-right: 10px;
+    }
+}

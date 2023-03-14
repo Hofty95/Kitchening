@@ -1,0 +1,134 @@
+/* Mobile First */
+
+/* .home{
+
+} */
+
+/* .home__main{
+
+} */
+
+.home__main__section--banner{
+    display: none;
+}
+
+.home__main__section--productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home__main__section__article{
+    width: 100%;
+}
+
+/* .home__main__section__article--producto{
+
+} */
+
+.home__main__section__article--image{
+    position: relative;
+    transition: all .2s;
+}
+
+.home__main__section__article--image:hover{
+    transform: scale(1.1);
+}
+
+.home__main__section__article--image-producto{
+    width: 100%;
+    transition: all .2s;
+}
+
+.home__main__section__article--image-sticker{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.home__main__section__article--image-zoom{
+    position: absolute;
+    color: white;
+    top: 45%;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.home__main__section--contenido h4{
+    margin: 20px 0;
+}
+
+.home__main__section--contenido a{
+    margin: 20px 0;
+    display: inline-block;
+    background-color: var(--colorGris);
+    padding: 8px;
+}
+
+.home__main__section__article-detail{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home__main__section__article--image-detail{
+    position: relative;
+   /*  transition: all .2s; */
+    width: 45%;
+}
+
+.slider-for img{
+    width: 100%;
+}
+
+.slider-nav img{
+    width: 100%;
+}
+
+/* .home__main__section__article--image-detail:hover{
+    transform: scale(1.1);
+} */
+
+.home__main__section__article--image-producto-detail{
+    width: 100%;
+}
+
+.home__main__section--contenido-detail{
+    width: 45%;
+}
+
+
+
+/* Tablet (768px) */
+
+@media (min-width:768px) {
+    .home__main__section__article{
+        width: 48%;
+        display: inline-block;
+    }
+    .home__main__section--productos{
+        justify-content: space-between;
+    }
+    .home__main__section--banner{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .home__main__section--banner img{
+        width: 100%;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1180px) {
+    .home__main__section__article{
+        width: 32%;
+    }
+}

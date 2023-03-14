@@ -1,0 +1,33 @@
+<header class="header">
+    <a href="/"><img class="header__logo" src="/images/logo.jpg" alt=""></a>
+    
+    <button class="header__burger"><i class="fas fa-bars"></i></button>
+    <nav class="header__nav">
+        <ul class="header__nav--menu">
+            <li><a href="/courses/list">Cursos</a></li>
+            <li><a href="#">Categorias</a></li>
+        </ul>
+        <ul class="header__nav--user">
+            <% if (locals.userLogin) { %>
+                <li><a href="/users/profile">Profile</a></li>
+            <% }else{ %>
+                <li><a href="/users/login">login</a></li>
+                <li><a href="/users/register">register</a></li>
+            <% } %>
+            
+        </ul>
+    </nav>
+    <nav class="header__nav__2">
+        <ul>
+            <li><a href="/courses/add">Agregar Curso</a></li>
+        </ul>
+    </nav>
+    <nav class="header__nav__2">
+    <ul>
+        <% categories.forEach(({idCategory, category}) => { %>
+         <li><a href="/courses/category/<%= idCategory %>"><%= category %> </a></li>
+        <% }) %>
+    </ul>
+    </nav>
+
+</header>

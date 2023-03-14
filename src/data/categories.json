@@ -1,0 +1,18 @@
+[
+    {
+        "idCategory" : 1,
+        "category" : "sushi"
+    },
+    {
+        "idCategory" : 2,
+        "category" : "basicos"
+    },
+    {
+        "idCategory" : 3,
+        "category" : "avanzados"
+    },
+    {
+        "idCategory" : 4,
+        "category" : "pasteleria"
+    }
+]

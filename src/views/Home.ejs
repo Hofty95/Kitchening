@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head")  %> 
+<body class="home">
+    <!-- encabezado -->
+<%- include("./partials/header")  %> 
+    <!-- principal -->
+    <main class="home__main">
+        <!-- banner -->
+        <section class="home__main__section--banner">
+            <img src="/images/img-banner.jpg" alt="">
+        </section>
+        <!-- productos -->
+        <section class="home__main__section--productos">
+            <!-- producto -->
+            <% courses.forEach(course => { %>
+             <article class="home__main__section__article">
+                <div class="home__main__section__article--image">
+                    <img
+                    class="home__main__section__article--image-producto-detail"
+                    src="/images/courses/<%= course.images.length ? course.images[0] : "nodisponible.png" %>"
+                    alt=""
+                  />
+                  <img
+                    class="home__main__section__article--image-sticker"
+                    src="/images/<%= productStatus ? productStatus.photo : "img-faltante.png" %>"
+                    alt=""
+                  />
+                </div>
+                <div class="home__main__section--contenido">
+                    <h4><%= course.title %></h4>
+                    <a href="/courses/detail/<%= course.id %>">ver más</a>
+                </div>
+            </article>
+            <% }) %>
+
+        </section>
+    </main>
+    <!-- pie de pagina -->
+<%- include("./partials/footer")  %> 
+</body>
+</html>

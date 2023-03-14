@@ -1,0 +1,10 @@
+[
+   {
+      "id": 1,
+      "name": "Victoria",
+      "surname": "Hofstetter",
+      "email": "hofty95@gmail.com",
+      "password": "$2a$10$gLkWYYXSJz1KjK7D8G9RWexEnMb5AZamfBVynakI.TYtKtWbD26HC",
+      "rol": "user"
+   }
+]

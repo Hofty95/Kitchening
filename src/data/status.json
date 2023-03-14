@@ -1,0 +1,17 @@
+[
+    {
+        "id" : 1,
+        "name" : "Gratis",
+        "photo" : "img-gratis.png"
+    },
+    {
+        "id" : 2,
+        "name" : "Descuento",
+        "photo" : "img-descuento.png"
+    },
+    {
+        "id" : 3,
+        "name" : "Nuevo",
+        "photo" : "img-gratis.png"
+    }
+]

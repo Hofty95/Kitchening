@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head") %>
+  <body class="home">
+    <!-- encabezado -->
+    <%- include("../partials/header") %>
+    <!-- principal -->
+    <main class="home__main">
+      <!-- productos -->
+      <section class="home__main__section--productos">
+        <!-- producto -->
+        <% courses.forEach(({id, title, price, description, images, status, chef}) => {
+        %>
+        <article class="home__main__section__article">
+          <div class="home__main__section__article--image">
+            <img
+              class="home__main__section__article--image-producto"
+              src="/images/courses/<%= images.length ? images[0] : "nodisponible.png" %>"
+              alt=""
+            />
+            <img
+              class="home__main__section__article--image-sticker"
+              src="/images/<%= productStatus ? productStatus.photo : "img-faltante.png" %>"
+              alt=""
+            />
+          </div>
+          <div class="home__main__section--contenido">
+            <h4><%= title %></h4>
+            <p><%= description %> <span> <b>By <%= chef %></b>  </span></p>
+            <a href="/courses/detail/<%= id %>">ver más</a>
+          </div>
+        </article>
+        <% }) %>
+      </section>
+    </main>
+    <!-- pie de pagina -->
+    <%- include("../partials/footer") %>
+  </body>
+</html>

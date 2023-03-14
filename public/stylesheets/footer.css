@@ -1,0 +1,36 @@
+.footer__nav{
+    background-color: var(--colorRojo);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__nav li{
+    width: 100%;
+    background-color: var(--colorRojo);
+    border-bottom: 1px solid white;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* desktop */
+
+@media (min-width: 1180px) {
+    .footer__nav{
+     height: 180px;
+     padding: 80px 0;
+     border-radius: 20px 20px 0 0;
+     flex-direction: row;
+     justify-content: center;
+    }
+    .footer__nav li{
+        display: inline;
+        margin-bottom: none;
+        padding: 0 10px;
+        border-bottom: none;
+        border-right: 2px white solid;
+    }
+    .footer__nav li:last-child{
+        border-right:none ;
+    }
+}

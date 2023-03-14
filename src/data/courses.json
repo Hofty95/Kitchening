@@ -1,0 +1,64 @@
+[
+   {
+      "id": 1,
+      "title": "SUSHI PROFESIONAL",
+      "price": 10530,
+      "description": "Con una gran experiencia Roberto Nishida te enseña los secretos de las técnicas básicas en la elaboración del sushi, vas a descubrir la importancia de cada ingrediente para que realices una gran variedad de rolls, sashimis y niguiris.",
+      "images": [
+         "curso1.png"
+      ],
+      "status": "Descuento",
+      "chef": "Roberto Nishida",
+      "idCategory": 1
+   },
+   {
+      "id": 2,
+      "title": "ABC DE LA COCINA",
+      "price": 10530,
+      "description": "Tu comida puede transformarse en platos de restaurante de la mano de Guillermo Calabrese que te enseñará a combinar ingredientes simples con productos gourmet para darle un sabor distinto a tus recetas.",
+      "images": [
+         "curso2.webp"
+      ],
+      "status": "Gratis",
+      "chef": "Guillermo Calabrese",
+      "idCategory": 2
+   },
+   {
+      "id": 3,
+      "title": "GASTRONOMIA ONLINE",
+      "price": 10530,
+      "description": "Tu comida puede transformarse en platos de restaurante de la mano de Guillermo Calabrese que te enseñará a combinar ingredientes simples con productos gourmet para darle un sabor distinto a tus recetas.",
+      "images": [
+         "curso3.jpeg"
+      ],
+      "status": "Nuevo",
+      "chef": "Guillermo Calabrese",
+      "idCategory": 3
+   },
+   {
+      "id": 4,
+      "title": "PASTELERIA ONLINE",
+      "price": 12500,
+      "description": "Tu comida puede transformarse en platos de restaurante de la mano de Guillermo Calabrese que te enseñará a combinar ingredientes simples con productos gourmet para darle un sabor distinto a tus recetas.",
+      "images": [
+         "curso6.jpg"
+      ],
+      "status": "Nuevo",
+      "chef": "Guillermo Calabrese",
+      "idCategory": 4
+   },
+   {
+      "id": 5,
+      "title": "prueba varias",
+      "price": 420752,
+      "description": "qweqweqweqwertyddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "images": [
+         "1677187773806_courses_.jpg",
+         "1677187773807_courses_.jpg",
+         "1677187773807_courses_.jpg"
+      ],
+      "status": "Nuevo",
+      "chef": "Cubano Vega",
+      "idCategory": null
+   }
+]

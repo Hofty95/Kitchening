@@ -5,6 +5,8 @@ const chefs = require("../data/chefs.json");
 const productStatus = require("../data/status.json");
 const { validationResult }  = require("express-validator")
 
+const db = require('../database/models')
+
 /*  */
 module.exports = {
     listadoProductos : (req, res) => {
